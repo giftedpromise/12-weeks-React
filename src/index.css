@@ -1,68 +1,58 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* styles.css */
+.service-title {
+  color: var(--Color-Style-Surface-Roles-On-Surface-variant, #474747);
+  text-align: center;
+  font-family: Lato, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px; /* 128.571% */
+}
+
+.service-description {
+  color: var(--Neutral-8, #777);
+  text-align: center;
+  font-family: Lato, sans-serif;
+  font-size: 16px;
+  font-style: normal;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.5px;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+.service-card {
+  border-radius: 16px 16px 0px 0px;
+  border-bottom: 5px solid var(--Color-Style-Primary-Roles-Pri-color, #4567f7);
+  background: var(--Color-Style-Surface-Roles-On-Inverse-surface, #f1f1f1);
+  padding: 24px 16px;
 }
 
-body {
-  margin: 0;
+.service-heading {
+  color: #000;
+  font-family: Lato, sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 125% */
+}
+
+.service-icon-container {
+  background: var(
+    --Color-Style-Surface-Roles-On-Inverse-surface,
+    #f1f1f1
+  ); /* Match the card's background */
+
+  border-radius: 50%; /* Ensure circular background */
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.service-icon {
+  max-height: 100%; /* Ensure the image doesn't exceed the container size */
+  max-width: 100%; /* Ensure the image doesn't exceed the container size */
 }
