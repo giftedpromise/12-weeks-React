@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 /* styles.css */
 .service-title {
   color: var(--Color-Style-Surface-Roles-On-Surface-variant, #474747);
@@ -55,4 +51,22 @@
 .service-icon {
   max-height: 100%; /* Ensure the image doesn't exceed the container size */
   max-width: 100%; /* Ensure the image doesn't exceed the container size */
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+  color: #fff;
+}
+
+.button-increase {
+  background-color: #4caf50; /* Green */
+}
+
+.button-decrease {
+  background-color: #f44336; /* Red */
 }

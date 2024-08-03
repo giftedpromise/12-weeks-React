@@ -1,4 +1,8 @@
 import React from "react";
+import { Counter } from "./Counter";
+import Form from "./Form";
+import ToggleText from "./ToggleText";
+import ListManager from "./ListManager";
 
 const DayFour2 = () => {
   return (
@@ -12,7 +16,7 @@ state is mutable and is managed within the component.
 Managing and Using State in React with useState
 State management is crucial in React for building interactive and dynamic user interfaces. 
 The useState hook is a fundamental part of React's functional component system, 
-allowing you to add state to functional components.
+allowing you to add state to functional components. Hooks can only be called inside the body of a function.
 
 What is useState?
 useState is a React hook that allows you to add state variables to functional components.
@@ -90,10 +94,19 @@ const updateName = (newName) => {
   setUser(prevUser => ({ ...prevUser, name: newName }));
 };
 
-
+Summary
+useState allows you to add state to functional components.
+It returns an array with the current state and a function to update it.
+Use curly braces {} in JSX to embed JavaScript expressions.
+Manage complex state by spreading previous state or using callbacks for updates.
+Practice by creating interactive components that utilize state for various features.
+Understanding and using state effectively is crucial for building interactive React applications.
         */}
 
-      <h1></h1>
+      <Counter />
+      <Form />
+      <ToggleText />
+      <ListManager />
     </div>
   );
 };
