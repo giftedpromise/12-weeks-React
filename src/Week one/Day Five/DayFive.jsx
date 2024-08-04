@@ -1,4 +1,5 @@
 import React from "react";
+import HandlingEvents from "./HandlingEvents";
 
 {
   /*
@@ -47,6 +48,11 @@ const handleSubmit = (event) => {
   // handle form submission
 };
 
+6.Passing Arguments to Handlers:
+
+You can pass arguments to event handlers using an arrow function:
+<button onClick={() => handleClick('Hello')}>Click Me</button>
+
     */
 }
 
@@ -54,6 +60,7 @@ const DayFive = () => {
   return (
     <div>
       <h2></h2>
+      <HandlingEvents />
     </div>
   );
 };
