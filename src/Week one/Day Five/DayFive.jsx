@@ -20,23 +20,7 @@ using pure JavaScript. Some of the syntax difference between handling event in R
 React events are named using camelCase, rather than lowercase.
 With JSX you pass a function as the event handler, rather than a string.
 
-2. Syntax:
 
-Event handlers in React are passed as camelCase attributes. For example:
-<button onClick={handleClick}>Click Me</button>
-
-3.Event Object:
-React’s event handlers receive an event object, which contains information about the event.
- For example, the onClick event object has properties like target, type, and currentTarget.
-
-4.  Binding Event Handlers:
-
-If you define an event handler as a class method, you'll often need to bind it to the component instance. 
-This is typically done in the constructor:
-constructor(props) {
-  super(props);
-  this.handleClick = this.handleClick.bind(this);
-}
 
 5. Preventing Default Behavior:
 
