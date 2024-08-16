@@ -11,13 +11,6 @@ The component should display the entered name below the input field in real-time
 import React, { useState } from "react";
 
 const Practice = () => {
-  const [name, setName] = useState("");
-  const [age, setAge] = useState("");
-
-  const handleNameChange = (event) => {
-    setName(event.target.value);
-  };
-
   const handleAgeChange = (event) => {
     setAge(event.target.value);
   };
