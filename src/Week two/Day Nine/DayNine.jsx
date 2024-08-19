@@ -38,6 +38,7 @@ setUser({ ...user, age: 26 }); // Only updating the age
 }
 
 import React, { useState } from "react";
+import Practice from "./Practice";
 const DayNine = () => {
   const [count, setCount] = useState(0);
 
@@ -54,6 +55,7 @@ const DayNine = () => {
       <h1>Count: {count}</h1>
       <button onClick={increment}>Increment</button>
       <button onClick={decrement}>Decrement</button>
+      <Practice />
     </div>
   );
 };
