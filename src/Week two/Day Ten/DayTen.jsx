@@ -58,3 +58,16 @@ useEffect(() => {
 
     */
 }
+
+import React from "react";
+import DataFetcher from "./DataFetcher";
+import UserList from "./UserList";
+
+export const DayTen = () => {
+  return (
+    <div>
+      <DataFetcher />
+      <UserList />
+    </div>
+  );
+};
