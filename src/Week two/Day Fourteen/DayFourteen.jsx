@@ -9,12 +9,19 @@ The Context API is a React feature that allows you to share state or data across
     
 
  Key Concepts
-Context Creation:
-
+1. Context Creation:
 React.createContext(): This function is used to create a new context object.
  The context object comes with two components: Provider and Consumer.
 
  const MyContext = React.createContext();
+
+ 2. Provider:
+
+Provider Component: The Provider component makes the context value available to any component in its subtree. 
+You use it by wrapping your component tree and passing the value you want to share as a prop to the Provider.
+
+
+
 
     */
 }
