@@ -21,7 +21,10 @@ Provider Component: The Provider component makes the context value available to 
 You use it by wrapping your component tree and passing the value you want to share as a prop to the Provider.
 
 
+3. Consumer:
 
+Consumer Component: The Consumer component allows any nested component to access the context value.
+ It uses the render props pattern.
 
     */
 }
