@@ -20,11 +20,18 @@ React.createContext(): This function is used to create a new context object.
 Provider Component: The Provider component makes the context value available to any component in its subtree. 
 You use it by wrapping your component tree and passing the value you want to share as a prop to the Provider.
 
+<MyContext.Provider value={some value}>
+   component tree 
+</MyContext.Provider>
+
 
 3. Consumer:
-
 Consumer Component: The Consumer component allows any nested component to access the context value.
  It uses the render props pattern.
+
+ <MyContext.Consumer>
+  {value => render something based on the context value }
+</MyContext.Consumer>
 
     */
 }
