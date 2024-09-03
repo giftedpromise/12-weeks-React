@@ -51,6 +51,23 @@ Name your CSS file with the .module.css extension, e.g., Button.module.css.
   background-color: #0056b3;
 }
 
+2. Import and Use the CSS Module in Your Component:
+import React from 'react';
+import styles from './Button.module.css';
 
+const Button = ({ label }) => {
+  return (
+    <button className={styles.button}>
+      {label}
+    </button>
+  );
+};
+
+export default Button;
+Key Points:
+
+CSS Modules automatically generate unique class names, preventing clashes.
+They help maintain clean and modular code by scoping styles to the component.
+They can be combined with global styles if needed for broader styling.
     */
 }
