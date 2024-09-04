@@ -14,9 +14,12 @@ Maintainable Code: Styled-components help keep styles close to the components th
 Theming: It supports theming, which allows you to define a consistent design across your app.
 Installation:
 
-Before using styled-components, you need to install it in your project.
+1. Before using styled-components, you need to install it in your project.
 
 npm install styled-components
+
+2. Learn How to Create and Use Styled Components in React
+Basic Example of a Styled Component:
 
     */
 }
