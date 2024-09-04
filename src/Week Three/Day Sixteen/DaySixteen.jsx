@@ -15,5 +15,8 @@ Theming: It supports theming, which allows you to define a consistent design acr
 Installation:
 
 Before using styled-components, you need to install it in your project.
+
+npm install styled-components
+
     */
 }
